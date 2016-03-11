@@ -4,7 +4,7 @@
 @date 2016-03-11
 @author xiabeifeng
 
-namespace xiabeifeng;
+namespace xiabeifeng\component;
 
 class HelloWorld
 {
@@ -13,5 +13,20 @@ class HelloWorld
         echo 'Hello World!';
     }
 }
+
+?>
+
+
+<?php
+@filename demo.php
+@explain 调用say()方法
+@date 2016-03-11
+@author xiabeifeng
+
+require './HelloWorld.class.php';
+use xiabeifeng\component\HelloWorld as HW;
+
+$object = new HW;
+HW->say();
 
 ?>
