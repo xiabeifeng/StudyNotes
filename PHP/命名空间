@@ -1,0 +1,17 @@
+<?php
+@filename HelloWorld.class.php
+@explain 打印Hello World
+@date 2016-03-11
+@author xiabeifeng
+
+namespace xiabeifeng;
+
+class HelloWorld
+{
+    public function say()
+    {
+        echo 'Hello World!';
+    }
+}
+
+?>
