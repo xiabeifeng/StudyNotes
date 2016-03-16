@@ -47,7 +47,11 @@ TortoiseSVN：针对Windows平台的Subversion客户端
     /blog/branches
     /blog/tags
 
-
+* 无论你使用何种版本库,定期维护和备份版本库非常重要,或许你可以访问最近版本的文件,但是如果没有版本库,所有的历史版本信息将会丢失。
+ 
+* 如果你独自工作,且没有服务器,或者只是想在独立的环境下学习 Subversion 和 TortoiseSVN,那么本地版本库可能是你最好的选择。
+ 
+* F5 刷新当前视图。
 
 
 
