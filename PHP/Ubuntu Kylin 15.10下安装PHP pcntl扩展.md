@@ -8,26 +8,21 @@
 
 * 在php官网上下载对应php版本的源代码到自己的家目录并解压缩
 
->  cd /home/xiabeifeng
-
->  tar -zxvf php-5.5.19.tar.gz
-
->  cd /home/xiabeifeng/php-5.5.19/ext/pcntl
-
->  sudo /opt/lampp/bin/phpize
-
->  ./configure --with-php-config=/opt/lampp/bin/php-config
-
->  make
-
->  make install
+<pre><code>cd /home/xiabeifeng
+tar -zxvf php-5.5.19.tar.gz
+cd /home/xiabeifeng/php-5.5.19/ext/pcntl
+sudo /opt/lampp/bin/phpize
+./configure --with-php-config=/opt/lampp/bin/php-config
+make
+make install
+</code></pre>
   
 * 安装好后（pcntl.so被安装到了**/opt/lampp/lib/php/extensions**目录下面），需要编辑php.ini文件,加入 extension = pcntl.so
 
->  sudo vi /opt/lampp/etc/php.ini
+<pre><code>sudo vi /opt/lampp/etc/php.ini</code></pre>
  
 * 然后重启xampp
   
->  sudo /opt/lampp/lampp restart
+<pre><code>sudo /opt/lampp/lampp restart</code></pre>
 
 * 重启后再通过phpinfo()打印出相关信息，搜索"pcntl",就可以看到pcntl已经开启了
