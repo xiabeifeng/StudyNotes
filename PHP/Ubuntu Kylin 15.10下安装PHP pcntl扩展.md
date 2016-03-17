@@ -1,6 +1,6 @@
 # Ubuntu Kylin 15.10下安装PHP pcntl扩展
 
-我的办公电脑安装的操作系统为Ubuntu Kylin 15.10，在已经通过XAMPP搭建好了PHP开发环境如何安装PHP pcntl扩展呢？
+我的办公电脑安装的操作系统为Ubuntu Kylin 15.10，在已经通过XAMPP搭建好了PHP开发环境的情况下如何安装PHP pcntl扩展呢？
 
 下面是安装的步骤：
 
