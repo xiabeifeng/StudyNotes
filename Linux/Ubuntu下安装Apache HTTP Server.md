@@ -18,7 +18,7 @@
 
 * 一些注意事项：
 <pre><code>/etc/apache2/apache2.conf是主配置文件
-The default Debian document root is */var/www/html*
+The default Debian document root is /var/www/html
 开启apache:sudo /etc/init.d/apache2 start
 停止apache:sudo /etc/init.d/apache2 stop
 查看apache状态:/etc/init.d/apache2 status</code></pre>
