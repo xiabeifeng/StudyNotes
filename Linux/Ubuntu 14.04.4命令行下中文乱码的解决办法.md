@@ -1,4 +1,4 @@
-# Ubuntu命令行下中文乱码的解决办法
+# Ubuntu 14.04.4命令行下中文乱码的解决办法
 
 > sudo vi /etc/default/locale
 
