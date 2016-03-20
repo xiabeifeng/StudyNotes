@@ -1,4 +1,4 @@
-# Ubuntu下安装Apache HTTP Server
+# Ubuntu 14.04.4下安装Apache HTTP Server
 
 * 添加Apache HTTP Server最新版本(2.4.18)的ppa
 <pre><code>sudo add-apt-repository ppa:ondrej/apache2
