@@ -8,4 +8,6 @@
 
 3. 利用U盘安装好Ubuntu后，进入命令行后，第一步要做的就是更新软件：
 
->   
+>   sudo apt-get update
+
+>   sudo apt-get upgrade
