@@ -1,4 +1,4 @@
-# Ubuntu 14.04下Apache HTTP Server 2.4.18虚拟主机的配置及常见问题
+# Ubuntu 14.04.4下Apache HTTP Server 2.4.18虚拟主机的配置及常见问题
 
 * 修改/etc/hosts文件
 <pre><code>sudo vi /etc/hosts
