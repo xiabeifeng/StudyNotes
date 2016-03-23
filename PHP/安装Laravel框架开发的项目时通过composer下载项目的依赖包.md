@@ -6,5 +6,6 @@
 curl -sS https://getcomposer.org/installer | php
 sudo apt-get install php5-curl
 sudo apt-get install php5-gd
+sudo apt-get install php5-mcrypt
 php composer.phar install
 </pre></code>
