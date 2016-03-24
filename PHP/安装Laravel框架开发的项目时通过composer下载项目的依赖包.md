@@ -14,6 +14,7 @@ sudo apt-get install php5-mcrypt
 </pre></code>
 
 > php可用扩展目录：/etc/php5/mods-available
+
 > php已开启扩展目录：/etc/php5/cli/conf.d
 
 * php-mcrypt安装好后默认没有开启，需要我们自己创建软链接文件开启
