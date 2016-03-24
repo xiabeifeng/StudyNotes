@@ -11,6 +11,7 @@ curl -sS https://getcomposer.org/installer | php
 <pre><code>sudo apt-get install php5-curl
 sudo apt-get install php5-gd
 sudo apt-get install php5-mcrypt
+sudo apt-get install php5-mysql
 </pre></code>
 
 > php可用扩展目录：/etc/php5/mods-available
