@@ -10,7 +10,15 @@
 
 > The Artisan CLI can be used to generate a variety of classes and will save you a lot of typing as you build your Laravel projects. 
 
-* the Eloquent ORM
+> Use the make:migration command to generate a new database migration.
+
+> To run our migration, we will use the migrate Artisan command. 
+
+> We can use an Artisan command to generate this model.
+
+* the Eloquent ORM(object-relational mapper)
+
+> Eloquent is Laravel's default ORM (object-relational mapper). Eloquent makes it painless to retrieve and store data in your database using clearly defined "models". Usually, each Eloquent model corresponds directly with a single database table。Eloquent是Laravel的默认ORM。Eloquent使用明确定义的模型使得在你的数据库中检索和存储数据变得无痛。通常，每一个Eloquent模型直接对应一个单独的数据库表。
 
 * routing
 
