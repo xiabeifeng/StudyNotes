@@ -20,12 +20,17 @@
 
 > Eloquent is Laravel's default ORM (object-relational mapper). Eloquent makes it painless to retrieve and store data in your database using clearly defined "models". Usually, each Eloquent model corresponds directly with a single database table。Eloquent是Laravel的默认ORM。Eloquent使用明确定义的模型使得在你的数据库中检索和存储数据变得无痛。通常，每一个Eloquent模型直接对应一个单独的数据库表。
 
+> Model file will be placed in the app directory of your application.
+
 * Routing
 
 > Routes are used to point URLs to controllers or anonymous functions that should be executed when a user accesses a given page. By default, all Laravel routes are defined in the app/Http/routes.php file that is included in every new project.
 
 * validation
 
-* views
+* Views
+
+> All Laravel views are stored in resources/views.
+
 
 * Blade templates
