@@ -26,3 +26,7 @@ sudo ln -s ../../mods-available/mcrypt.ini ./20-mcrypt.ini
 * 通过composer安装Laravel项目所需的php组件
 <pre><code>php composer.phar install
 </pre></code>
+
+* 数据库迁移
+<pre><code>php artisan migrate
+</pre></code>
