@@ -32,5 +32,6 @@
 
 > All Laravel views are stored in resources/views.
 
+> The .blade.php extension instructs the framework to use the Blade templating engine to render the view.
 
 * Blade templates
