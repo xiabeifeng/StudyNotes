@@ -21,7 +21,6 @@
  $key = 'author';
  if (!$redis->exists($key)) {
     $redis->set($key, 'xiabeifeng');
- } else {
-    echo $redis->get($key);
  }
+ echo $redis->get($key);
  
