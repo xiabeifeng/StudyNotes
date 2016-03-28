@@ -4,9 +4,9 @@
 
 下面是安装的步骤：
 
-* 通过phpinfo()的结果获知你当前运行的php版本是多少，例如：5.5.19
+* 由于pcntl是php的核心扩展（php源代码扩展目录中有pcntl），因此我们通过phpinfo()的结果获知你当前运行的php版本是多少，例如：5.5.19
 
-* 在php官网上下载对应php版本的源代码到自己的家目录并解压缩
+* 然后在php官网上下载对应php版本的源代码到自己的家目录并解压缩
 
 <pre><code>cd /home/xiabeifeng
 tar -zxvf php-5.5.19.tar.gz
