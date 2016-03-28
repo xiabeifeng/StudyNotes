@@ -1,6 +1,8 @@
 <?
 /**
- * PHP空对象
+ * @explain PHP空对象
+ * @date 2016-03-28
+ * @author xiabeifeng
  */
 
 $obj = new stdClass();  // 实例化一个空对象
