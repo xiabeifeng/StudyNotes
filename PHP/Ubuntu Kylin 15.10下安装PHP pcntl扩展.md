@@ -17,7 +17,7 @@ make
 make install
 </code></pre>
   
-* 安装好后（pcntl.so被安装到了**/opt/lampp/lib/php/extensions**目录下面），需要编辑php.ini文件,加入 extension = pcntl.so
+* 安装好后（pcntl.so被安装到了**/opt/lampp/lib/php/extensions/no-debug-non-zts-20121212/**目录下面），需要编辑php.ini文件,加入 extension = pcntl.so
 
 <pre><code>sudo vi /opt/lampp/etc/php.ini</code></pre>
  
