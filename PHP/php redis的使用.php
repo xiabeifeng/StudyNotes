@@ -11,9 +11,9 @@
  try {
     $link = $redis->connect('127.0.0.1', 6379);
     if (!$link) {
-        throw new Exception('Connect redis failed!');
+        throw new RedisException('Connect redis failed!');
     } 
- } catch (Exception $e) {
+ } catch (RedisException $e) {
     die($e->getMessage());
  }
  
