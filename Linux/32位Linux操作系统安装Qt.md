@@ -7,3 +7,9 @@ sudo chmod ugo+x qt-unified-linux-x86-online.run
 </code></pre>
 
 * 安装
+<pre><code>cd /opt
+sudo mkdir qt
+sudo chmod -R 777 qt
+cd ~/下载
+./qt-unified-linux-x86-online.run
+</code></pre>
