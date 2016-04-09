@@ -20,6 +20,13 @@
 ```
 1. 每个PHP组件的名称都由厂商名和包名组成，例如league/flysystem
 2. 厂商名全局唯一，厂商名下的包名在该厂商名下唯一
+3. composer require xiabeifeng/express-query
+   说明：
+   (1)如果你之前没下载过xiabeifeng/express-query组件，则该命令会下载组件的最新稳定版本。
+   (2)如果你之前下载过xiabeifeng/express-query组件的低版本，则该命令会将低版本升级到下一个主版本之前的最新版。
+      例如：你之前下载了1.0.0版本，则会升级为1.1.0版本（同一主版本号下的最新版本）。
+   (3)执行该命令会创建composer.json和composer.lock文件或更新composer.json和composer.lock文件。
+   (4)composer.json和composer.lock文件都需要纳入到版本控制系统。
 ```
 
 * 语言版本
