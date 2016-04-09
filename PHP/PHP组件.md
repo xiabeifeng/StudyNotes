@@ -22,12 +22,25 @@ PHP组件是打包的代码，是一系列相关的类、接口和性状，用�
 ```
 * 查找组件
 ```
-我们可以在PHP组件目录Packagist中查找现代PHP组件。
+（1）我们可以在PHP组件目录Packagist中查找现代PHP组件。
+（2）Awesome PHP(https://github.com/ziadoz/awesome-php)列出了很多优秀的PHP组件。
 ```
-
-常用的PHP组件
+* 如何使用PHP组件
+```
+（1）通过Composer安装PHP组件。Composer是PHP组件的依赖管理器，与Linux的软件包管理器yum、aptitude等作用类似。
+（2）Composer解决了两大难题：依赖管理和自动加载。Composer有效抽象了依赖管理和自动加载。
+```
+* 加载PHP文件的方式
+```
+（1）使用include()、include_once()、require()、require_once()函数手动加载。
+（2）使用_autoload()函数实现自定义的自动加载器。
+（3）使用sql_autoload_register()函数实现更灵活的自动加载。
+（4）使用包管理器Composer自动生成符合PSR标准的自动加载器。
+```
+* 常用的PHP组件
+```
 （1）guzzle/http
 （2）aura/router、orno/route
 （3）aws/aws-sdk-php
 （4）league/flysystem
-（5）
+```
