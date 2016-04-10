@@ -37,6 +37,20 @@
 第三个数字是修订版本号，如果PHP修正了向后兼容的缺陷，会提升修订版本号。
 ```
 
+* 关于composer.lock文件
+```
+(1)通过Composer安装PHP项目的组件后，Composer会为我们创建一个composer.lock文件。这个文件会列出项目使用的所有PHP组件，
+以及组件的具体版本(包括主版本号、次版本号、修订版本号)。这其实是锁定了项目，让项目只能使用具体版本的PHP组件。
+(2)如果有composer.lock文件，Composer会下载这个文件中列出的具体版本，而不管Packagist中可用的最新版本是多少。
+(3)composer install 命令不会安装比composer.lock文件中列出的版本号新的版本。如果确实需要下载新版组件，要使用composer update命令。
+这个命令会把组件更新到最新稳定版，同时会更新composer.lock文件。
+```
+
+* 关于vendor/autoload.php文件
+```
+Composer下载各个PHP组件时会检查每个组件的composer.json文件，确定如何加载该组件。得到这个信息后，Composer会在本地为该组件创建一个
+符合PSR标准的自动加载器。
+```
 
 
 
