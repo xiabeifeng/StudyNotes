@@ -11,5 +11,5 @@ $price = sprintf('%.2f', $originalPrice * $discount);    // 商品价格 = 原�
 3. php_uname()  //  返回运行 PHP 的系统的有关信息
 ```php
 <?php
-echo '您的服务器操作系统版本名称是：' . php_name('r') . '，操作系统版本信息：' . php_name('v');
+echo 'kernel-release：' . php_name('r') . '，kernel-version：' . php_name('v');
 ```
