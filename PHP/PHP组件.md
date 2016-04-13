@@ -43,4 +43,5 @@ PHP组件是打包的代码，是一系列相关的类、接口和性状，用�
 （2）aura/router、orno/route
 （3）aws/aws-sdk-php
 （4）league/flysystem
+（5）fabpot/php-cs-fixer    // A tool to automatically fix PHP code style
 ```
