@@ -1,4 +1,7 @@
 ## Ubuntu 14.04 下安装PHP工商银行 infosec 扩展
+* 成功安装infosec扩展的截图
+
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/Linux/images/infosec.png)
 
 * 首先确保你服务器的php版本与工商银行提供的infosec扩展对应的版本一致，否则，无法安装成功。
 例如，如果你的服务器php版本是5.5.19，那么工商银行提供的infosec扩展也必须要兼容php5.5.19版本。
