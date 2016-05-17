@@ -78,5 +78,10 @@ TortoiseSVN：针对Windows平台的Subversion客户端
 
 * **提交时要比较做了哪些修改，避免提交了不必要的文件或不必要的修改。**
 
+* 更新指定目录下的所有文件：**svn up /opt/lampp/www/blog/controller/**
+
+* 更新具体的某个文件：**svn up /opt/lampp/www/blog/controller/index.php**
+ 
+
 
 
