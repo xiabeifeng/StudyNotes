@@ -25,3 +25,14 @@ $message2 = 'This is a test.';
 file_put_contents('./1.txt', $message1.PHP_EOL);
 file_put_contents('./1.txt', $message2, FILE_APPEND);
 ```
+
+* error_log()
+```php
+<?php
+$m = new Model('member');
+$m->name = 'zhangsan';
+if (!$m->save()) {
+    // error_log()函数会将新错误信息以追加的形式写入到指定的文件中，而不会将文件中原有的数据覆盖
+    error_log('创建会员失败' . PHP_EOL, 3, '/opt/lampp/www/blog/log/error.log');
+}
+```
