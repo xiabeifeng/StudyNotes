@@ -28,3 +28,8 @@ fi
 xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ act=who
 xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ $act | wc -l
 ```
+
+* shell变量为空值的3种情况:没有赋值; 赋值单引号空字符串; 赋值双引号空字符串.
+
+ 
+
