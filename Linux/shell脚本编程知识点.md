@@ -19,3 +19,6 @@ fi
 ```
 
 * shell是一种弱类型的语言:变量在使用之前不需要先声明;声明变量的时候不需要指定变量类型.
+
+* 因为shell是解释型语言,因此可以在终端上直接给变量赋值:
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/Linux/images/terminal_shell.png)
