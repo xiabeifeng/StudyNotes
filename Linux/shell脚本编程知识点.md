@@ -22,3 +22,9 @@ fi
 
 * 因为shell是解释型语言,因此可以在终端上直接给变量赋值:
 ![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/Linux/images/terminal_shell.png)
+
+* shell命令也能存储在变量中,然后被shell解析执行
+```shell
+xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ act=who
+xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ $act | wc -l
+```
