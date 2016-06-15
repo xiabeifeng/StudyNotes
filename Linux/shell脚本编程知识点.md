@@ -33,7 +33,7 @@ xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ $act | wc -l
 
 * shell变量为空值的3种情况:没有赋值; 赋值单引号空字符串; 赋值双引号空字符串.
  
-* 一个变量的值中含有 * 字符. 如果该变量被单引号包含,则 * 会被替换成当前目录下的所有文件名; 如果该变量被双引号包含,则 * 会原样输出.
+* 一个变量的值中含有 * 字符. 如果该变量被单引号包含,则 * 会被替换成当前目录下的所有文件名; 如果该变量被双引号包含,则 * 会原样输出. 所以,如果想替换变量的值,又不希望shell把替换的内容作特殊字符对待,就应该把变量名括在双引号中.
 ![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/Linux/images/replace_filename.png)
 
  
