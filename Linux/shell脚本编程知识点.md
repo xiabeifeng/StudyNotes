@@ -40,5 +40,7 @@ xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ $act | wc -l
 ```shell
 ls -l `pwd`
 ls -l $(pwd)
+echo "当前的日期时间: `date`"
+echo "当前的日期时间: $(date)"
 ```
 
