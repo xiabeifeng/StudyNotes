@@ -36,5 +36,9 @@ xiabeifeng@ubuntu-xiabeifeng:~/shell/shell_learn$ $act | wc -l
 * 一个变量的值中含有 * 字符. 如果该变量被单引号包含,则 * 会被替换成当前目录下的所有文件名; 如果该变量被双引号包含,则 * 会原样输出. 所以,如果想替换变量的值,又不希望shell把替换的内容作特殊字符对待,就应该把变量名括在双引号中.
 ![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/Linux/images/replace_filename.png)
 
- 
+* 命令替换: 命令替换是指shell能够将一个命令的标准输出插在一个命令行中任何位置的功能. Shell有两种方法作命令替换: 把shell命令用反引号或者$(...)结构括起来.
+```shell
+ls -l `pwd`
+ls -l $(pwd)
+```
 
