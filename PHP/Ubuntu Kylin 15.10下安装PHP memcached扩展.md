@@ -9,8 +9,8 @@ A. 下载安装libmemcached(如果libmemcached没安装的话,配置memcached的
 	./configure --prefix=/usr/local/libmemcached
 	make && make install
 ```
-
-B. 在pecl官网http://pecl.php.net/package/memcache上下载memcached,然后安装
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/libmemcached_configure.png)
+B. 在pecl官网 http://pecl.php.net/package/memcache 上下载memcached,然后安装
 ```shell
 	wget http://pecl.php.net/get/memcache-2.2.7.tgz
 	tar -zxvf memcache-2.2.7.tgz
@@ -25,3 +25,4 @@ C. 在php.ini中加载memcached扩展
 ```
 
 D. 重启web服务
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/php_memcached_extension.png)
