@@ -20,7 +20,7 @@ C. memcache配置、编译、安装
 ```
 ![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/memcache.so.png)
 
-D. 在php.ini中加载memcached扩展
+D. 在php.ini中加载memcache扩展
 ```
 	extension="memcache.so"
 ```
