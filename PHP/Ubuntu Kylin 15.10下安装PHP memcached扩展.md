@@ -1,6 +1,6 @@
 ## Ubuntu Kylin 15.10下安装PHP memcached扩展
 
-A. 下载安装libmemcached(如果libmemcached没安装的话,配置memcached的时候会报"checking for libmemcached location... configure: error: memcached support requires libmemcached. Use --with-libmemcached-dir=<DIR> to specify the prefix where libmemcached headers and library are located"的错误)
+A. 下载安装libmemcached(如果libmemcached没安装的话,配置memcached的时候会报"checking for libmemcached location... configure: error: memcached support requires libmemcached. Use --with-libmemcached-dir=\<DIR\> to specify the prefix where libmemcached headers and library are located"的错误)
 ```shell
 	su -
 	wget https://launchpad.net/libmemcached/1.0/1.0.18/+download/libmemcached-1.0.18.tar.gz
