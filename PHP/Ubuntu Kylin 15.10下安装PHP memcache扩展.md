@@ -15,7 +15,7 @@ B. 生成配置文件(由于源码中没有configure文件,因此需要我们使
 
 C. memcache配置、编译、安装
 ```shell
-    ./configure ----with-php-config=/opt/lampp/bin/php-config
+    ./configure --with-php-config=/opt/lampp/bin/php-config
 	make && make install
 ```
 ![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/memcache.so.png)
