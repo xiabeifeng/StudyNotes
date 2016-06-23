@@ -71,19 +71,21 @@ function sortTags($tags, $n = 20)
     $newTags = array();
     if ($tags) {
         $c = count($tags);
-        for ($i = 0; $i < $c - 1; $i++) {
-            for ($j = 0; $j < $c - $i - 1; $j++) {
-                if ($tags[$j+1]['product_number'] > $tags[$j]['product_number']) {
-                    $t = $tags[$j+1];
-                    $tags[$j+1] = $tags[$j];
-                    $tags[$j] = $t;
+        if ($c > $n) {
+            for ($i = 0; $i < $c - 1; $i++) {
+                for ($j = 0; $j < $c - $i - 1; $j++) {
+                    if ($tags[$j+1]['product_number'] > $tags[$j]['product_number']) {
+                        $t = $tags[$j+1];
+                        $tags[$j+1] = $tags[$j];
+                        $tags[$j] = $t;
+                    }
                 }
             }
-            if ($i < $n) {
+            for ($i = 0; $i < $n; $i++) {
                 $newTags[] = $tags[$i];
-            } else {
-                break;
             }
+        } else {
+            $newTags = $tags;
         }
     }
     return $newTags;
