@@ -46,8 +46,9 @@ function getTagProductNumber($tags)
 {
     if ($tags) {
         $t = explode(',', $tags);
+        $unique = array_unique($t); // 去除重复的商品标签
         $tags = array();
-        foreach ($t as $v) {
+        foreach ($unique as $v) {
             $db = DB::get_db();
             $sql = 'SELECT COUNT(id) AS product_number FROM product';
             $sql .= ' WHERE find_in_set("' . $v . '", tags)';
