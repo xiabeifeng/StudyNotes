@@ -38,3 +38,12 @@ $pattern = '/(\d+(\.\d+)?)/'; // 匹配正整数或正的小数
 $content = preg_replace_callback($pattern, function($match){return '￥'.$match[0];}, $content);
 echo $content;
 ```
+
+* array_fill()    // 按指定的元素的个数和值填充数组
+```php
+// 使用预处理占位符?和SQL IN关键字的时候可以使用array_fill()
+$orderIdArray = array(1, 3, 5, 8);
+$db = DB::get_db();
+$sql = 'SELECT SUM(money) FROM order WHERE order_id IN (' . array_fill(0, count($orderIdArray), '?') . ')';
+$result = $db->query($sql, $orderIdArray);
+```
