@@ -24,4 +24,4 @@ make install
 <pre><code>sudo /opt/lampp/lampp restart
 </code></pre>
 
-* 重启后再通过phpinfo()打印出相关信息，搜索"redis",就可以看到pcntl已经开启了
+* 重启后再通过phpinfo()打印出相关信息，搜索"redis",就可以看到redis已经开启了
