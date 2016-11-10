@@ -39,7 +39,7 @@ SSLCertificateKeyFile配置选项的值是你的server.key文件的完整路径
 
 * 重启apache服务器
 
-* 另外，需要在代码层面进行判断，如果是通过http访问的，则需要跳转到https访问：
+* 需要在代码层面进行判断，如果是通过http访问的，则需要跳转到https访问：
 ```php
 if (!isset($_SERVER['HTTPS']) || $_SERVER['SERVER_PORT'] == '80') {
     Conf::$baseUrl = 'https://' . $_SERVER ['HTTP_HOST'] . '/';
