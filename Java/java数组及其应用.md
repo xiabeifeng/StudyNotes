@@ -54,6 +54,7 @@ public class Hello {
 		try {
 			int[] a = {1,2,3,4,5};
 			int[] b = a;
+			System.out.println(a == b);
 			for (int i = 0; i < b.length; i++) {
 				b[i]++;
 			}
