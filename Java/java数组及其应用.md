@@ -40,3 +40,30 @@ public class Hello {
 
 }
 ```
+
+* 数组变量是数组的管理者而非数组本身; 数组必须创建出来然后交给数组变量来管理; 数组变量之间的赋值是管理权限的赋予; 数组变量之间的比较是判断是否管理同一个数组
+```java
+package hello;
+
+import java.util.Scanner;
+
+public class Hello {
+	
+	public static void main (String[] args) {
+		Scanner in = new Scanner(System.in);
+		try {
+			int[] a = {1,2,3,4,5};
+			int[] b = a;
+			for (int i = 0; i < b.length; i++) {
+				b[i]++;
+			}
+			for (int i = 0; i < a.length; i++) {
+				System.out.println("a[" + i + "]=" + a[i]);
+			}
+		} finally {
+			in.close();
+		}
+	}
+	
+}
+```
