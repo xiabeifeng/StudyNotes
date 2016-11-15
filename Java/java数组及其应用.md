@@ -68,3 +68,35 @@ public class Hello {
 	
 }
 ```
+
+* 复制数组必须遍历源数组将每个元素逐一拷贝给目的数组
+```java
+package hello;
+
+import java.util.Scanner;
+
+public class Hello {
+	
+	public static void main (String[] args) {
+		Scanner in = new Scanner(System.in);
+		try {
+			int[] a = {1,2,3,4,5};
+			int[] b = new int[a.length];
+
+			for (int i = 0; i < a.length; i++) {
+				b[i] = a[i];
+			}
+			
+			for (int i = 0; i < b.length; i++) {
+				System.out.println(b[i]);
+			}
+			
+			System.out.println(a == b);
+		} finally {
+			in.close();
+		}
+	}
+	
+}
+```
+
