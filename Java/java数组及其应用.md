@@ -18,24 +18,23 @@ public class Hello {
 	
 	public static void main (String[] args) {
 		Scanner in = new Scanner(System.in);
-		try {
-			// 写一个程序，输入数量不确定的[0-9]范围内的整数，统计每一种数字出现的次数，输入-1表示程序结束。
-			int[] base = new int[10];
-			int t = in.nextInt();
+		
+		// 写一个程序，输入数量不确定的[0-9]范围内的整数，统计每一种数字出现的次数，输入-1表示程序结束。
+		int[] base = new int[10];
+		int t = in.nextInt();
 			
-			while (t != -1 && t >= 0 && t <= 9) {
-				base[t]++;
-				t = in.nextInt();
-			}
-			
-			for (int i = 0; i < base.length; i++) {
-				if (base[i] > 0) {
-					System.out.println(i + "出现的次数是：" + base[i] + "次");
-				}
-			}
-		} finally {
-			in.close();
+		while (t != -1 && t >= 0 && t <= 9) {
+			base[t]++;
+			t = in.nextInt();
 		}
+			
+		for (int i = 0; i < base.length; i++) {
+			if (base[i] > 0) {
+				System.out.println(i + "出现的次数是：" + base[i] + "次");
+			}
+		}
+		
+		in.close();
 	}
 
 }
@@ -51,19 +50,18 @@ public class Hello {
 	
 	public static void main (String[] args) {
 		Scanner in = new Scanner(System.in);
-		try {
-			int[] a = {1,2,3,4,5};
-			int[] b = a;
-			System.out.println(a == b);
-			for (int i = 0; i < b.length; i++) {
-				b[i]++;
-			}
-			for (int i = 0; i < a.length; i++) {
-				System.out.println("a[" + i + "]=" + a[i]);
-			}
-		} finally {
-			in.close();
+		
+		int[] a = {1,2,3,4,5};
+		int[] b = a;
+		System.out.println(a == b);
+		for (int i = 0; i < b.length; i++) {
+			b[i]++;
 		}
+		for (int i = 0; i < a.length; i++) {
+			System.out.println("a[" + i + "]=" + a[i]);
+		}
+		
+		in.close();
 	}
 	
 }
@@ -79,22 +77,21 @@ public class Hello {
 	
 	public static void main (String[] args) {
 		Scanner in = new Scanner(System.in);
-		try {
-			int[] a = {1,2,3,4,5};
-			int[] b = new int[a.length];
+		
+		int[] a = {1,2,3,4,5};
+		int[] b = new int[a.length];
 
-			for (int i = 0; i < a.length; i++) {
-				b[i] = a[i];
-			}
-			
-			for (int i = 0; i < b.length; i++) {
-				System.out.println(b[i]);
-			}
-			
-			System.out.println(a == b);
-		} finally {
-			in.close();
+		for (int i = 0; i < a.length; i++) {
+			b[i] = a[i];
 		}
+			
+		for (int i = 0; i < b.length; i++) {
+			System.out.println(b[i]);
+		}
+			
+		System.out.println(a == b);
+			
+		in.close();
 	}
 	
 }
