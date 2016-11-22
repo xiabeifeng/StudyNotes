@@ -11,25 +11,23 @@ import java.util.Scanner;
 public class Hello {
     public static void main (String[] args) {
         Scanner in = new Scanner(System.in);
-		try {
-			int num = 0;
-			int sum = 0;
-			int t = 0;
-			System.out.println("请输入一系列整数，最后输入-1表示结束：");
+		
+		int num = 0;
+		int sum = 0;
+		int t = 0;
+		System.out.println("请输入一系列整数，最后输入-1表示结束：");
 			
-			do {
-				t = in.nextInt();
-				if (t > 0) {
-					num++;
-					sum += t;
-				}
-			} while (t != -1);
+		do {
+			t = in.nextInt();
+			if (t > 0) {
+				num++;
+				sum += t;
+			}
+		} while (t != -1);
 			
-			System.out.println("您输入了" + num + "个正整数。");
-			System.out.println("平均数是：" + (double)sum / num);
-		} finally {
-			in.close();
-		}
+		System.out.println("您输入了" + num + "个正整数。");
+		System.out.println("平均数是：" + (double)sum / num);
+		in.close();
     }
 }
 ```
