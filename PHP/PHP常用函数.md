@@ -47,3 +47,10 @@ $db = DB::get_db();
 $sql = 'SELECT SUM(money) FROM order WHERE order_id IN (' . array_fill(0, count($orderIdArray), '?') . ')';
 $result = $db->query($sql, $orderIdArray);
 ```
+
+* array array_column ( array $input , mixed $column_key [, mixed $index_key ] )    // 返回二维数组中指定的一列
+```php
+$m = new Model('user');
+$result = $m->where(array('sex' => 1))->select();
+$users = array_column($result, 'username', 'id');
+```
