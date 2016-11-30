@@ -10,3 +10,22 @@ if (history.length > 1) {
     window.close();
     // WeixinJSBridge.call('closeWindow'); // 微信浏览器专用
 }
+
+// 循环把json对象插入到数组中
+```javascript
+$.ajax({
+    type : POST,
+    url : index.html,
+    success : function (data) {
+        if (data.errno == 200) {
+            var orderData = data.orderData;
+            var orderArray = new Array();
+            for (var i in orderData) {
+                orderArray[] = { username : orderData[i]['username'], headimg : orderData[i]['headimg'] };
+                // do other thing here
+            }
+        }
+    }
+});
+```
+
