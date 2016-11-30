@@ -12,7 +12,6 @@ if (history.length > 1) {
 }
 
 // 循环把json对象插入到数组中
-```javascript
 $.ajax({
     type : POST,
     url : index.html,
@@ -27,5 +26,4 @@ $.ajax({
         }
     }
 });
-```
 
