@@ -1,3 +1,14 @@
+// 判断checkbox是否被选中
+if ($('input[type="checkbox"]').is(':checked')) {
+    alert('当前checkbox是选中状态');
+} else {
+    alert('当前checkbox没有被选中');
+}
+
+// 将checkbox选中或取消选中,使用prop()可以尽量避免兼容性问题
+$('input[type="checkbox"]').prop('checked', true);  // 选中
+$('input[type="checkbox"]').prop('checked', false); // 取消选中
+
 // 获取选中的单选框的值
 $('input:radio:checked').val();
 $('input[type="radio"]:checked').val();
