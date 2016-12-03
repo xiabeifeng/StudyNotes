@@ -25,7 +25,7 @@ public class Hello {
 
 ```
 
-* 比较两个字符串的内容是否相同使用equals()方法；比较两个字符串是不是同一个东西用==
+* 比较两个字符串变量的内容是否相同使用equals()方法；比较两个字符串变量是不是同一个东西用==
 ```java
 package hello;
 
@@ -34,7 +34,7 @@ import java.util.Scanner;
 public class Hello {
 	
 	public static void main(String[] args){
-		// 比较两个字符串的内容是否相同不能使用==，而需要使用equals()方法
+		// 比较两个字符串变量的内容是否相同不能使用==，而需要使用equals()方法
 		Scanner in = new Scanner(System.in);
 		String a = "Hello World";
 		String b = in.nextLine();
