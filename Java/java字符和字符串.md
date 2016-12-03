@@ -42,3 +42,19 @@ public class Hello {
 	}
 }
 ```
+
+* java字符串对象常用的方法：
+```
+compareTo()
+length()
+charAt()
+substring()
+indexOf()
+lastIndexOf()
+trim()
+startsWith()
+endsWith()
+replace()
+toLowerCase()
+toUpperCase()
+```
