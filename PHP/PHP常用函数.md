@@ -54,3 +54,5 @@ $m = new Model('user');
 $result = $m->where(array('sex' => 1))->select();
 $users = array_column($result, 'username', 'id');
 ```
+
+* array array_merge_recursive ( array $array1 [, array $... ] )    // 递归地合并一个或多个数组
