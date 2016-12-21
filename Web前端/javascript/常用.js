@@ -1,3 +1,8 @@
+// js获取客户端当前时间的秒数(unix时间戳)
+var d = new Date();
+var time = parseInt(d.getTime() / 1000);
+alert('当前的时间戳是:' + time);
+
 // 判断checkbox是否被选中
 if ($('input[type="checkbox"]').is(':checked')) {
     alert('当前checkbox是选中状态');
