@@ -1,5 +1,9 @@
 # 微信接口curl方式请求出现的返回请求头信息问题
 
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/curl_header_1.png)
+
+![Aaron Swartz](https://raw.githubusercontent.com/xiabeifeng/study-notes/master/PHP/images/curl_header_2.png)
+
 ```php
 header("Content-type:text/html;charset=utf-8");
 $token = '123'; // 这种情况下，返回的数据正常
