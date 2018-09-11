@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Iframe Test</title>    
+</head>
+<body>
+    <div id="iframe_container">
+        <iframe frameborder="0" marginheight="0" marginwidth="0" scrolling="yes" height="100%" width="100%" seamless="seamless" src="https://www.baidu.com/"></iframe>
+    </div>
+</body>
+<script>
+	var height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+	var width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+	
+	var container = document.getElementById('iframe_container');
+	container.style.cssText = "width: "+width+"px; height: "+height+"px;";
+</script>
+</html>
